@@ -1,0 +1,25 @@
+ENUNCIAT
+El chiringuito de la platja d'oliva vol celebrar un event i vol que els usuaris es puguen
+registrar per a poder rebre un correu electrònic, dies abans el chiringuito enviarà de forma
+automàtica un correu electrònic per recordar la data a tots els usuaris registrats.
+
+CAMPS DEL FORMULARI
+-Nom
+-Cognom
+-Data de Naixement
+-Provincia
+
+REQUERIMENTS
+La longitud del nom es de 40 caracters
+
+El fitxer que rep el servidor amb l'informació s'anomena "Reserva.php"
+
+Ha de triar 2 copes entre els següents valors:
+    -Whiskey
+    -Conyac
+    -Aigua
+    -Vermut
+
+Ha de triar entre:
+    -Estar en la terrassa
+    -Dins del local
