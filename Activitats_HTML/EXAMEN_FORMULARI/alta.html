@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Jordi García">
+        <title>Alta Usuari</title>
+    </head>
+    <body>
+        <form action="procesar_info.php" method="post">
+            <!--INFORMACIÓ IMPORTANT-->
+            <fieldset>
+                <legend>Formulari d'Alta Pegolí Que Te Ví</legend>
+            <fieldset>
+                <legend>Informació Bàsica</legend>
+                    <label>Usuari:</label>
+                    <input type="text" maxlength="10" required>
+                    <br>
+                    <br>
+                    <label>Contrasenya:</label>
+                    <input type="password" maxlength="10" autofocus required>
+                    <br>
+                    <br>
+                    <label>Email:</label>
+                    <input type="email"  maxlength="20" required>
+                    <br>
+                    <br>
+                    <label>Nom:</label>
+                    <input type="text" maxlength="40" required>
+                    <br>
+                    <br>
+                    <label>Cognoms:</label>
+                    <input type="text" maxlength="40" required>
+                    <br>
+                    <br>
+                    <label>Data de Naixement:</label>
+                    <input type="month" name="month" id="month">
+                    <input type="date" name="data" id="data">
+                    <br>
+                    <br>
+                    <label>DNI:</label>
+                    <input type="text" maxlength="9" minlength="9" required>
+                    <br>
+                    <br>
+                    <label>Sexe:</label>
+                    <br>
+                    <input type="radio" name="Home" id="sexe" value="Home">
+                    <label for="sexe" id="1">Home</label>
+                    <br>
+                    <input type="radio" name="Dona" id="sexe" value="Dona">
+                    <label for="sexe" id="2">Dona</label>
+                    <br>
+                    <input type="radio" name="No específicat" id="sexe" value="Preferisc no especificar-ho">
+                    <label for="sexe" id="4">Preferisc no especificar-ho</label>
+                    <br>
+                    <input type="radio" name="Altres" id="sexe" value="Altres">
+                    <label for="sexe" id="3">Altres</label>
+                    <br>
+                    <br>
+                    <label>Web Empresa</label>
+                    <input type="text" id="web" maxlength="40" placeholder="http://pujabaixaitocalamarraixa.es" size="25">
+            </fieldset>
+            <br>
+            <!--ADREÇA DEL CLIENT-->
+            <fieldset>
+                <legend>Adreça</legend>
+                    <label>Nom del Carrer:</label>
+                    <input type="text">
+                    <br>
+                    <br>
+                    <label>Número de casa:</label>
+                    <input type="number" min="1">
+                    <br>
+                    <br>
+                    <label>Població:</label>
+                    <input type="text" maxlength="40">
+                    <br>
+                    <br>
+                    <label>Província:</label>
+                    <select>
+                        <option id="1" name="Castelló">Castelló</option>
+                        <option id="2" name="Valencia" selected>Valencia</option>
+                        <option id="3" name="Alacant">Alacant</option>
+                    </select>
+            </fieldset> 
+            <br>
+            <!--ALTRA INFORMACIÓ-->
+            <fieldset>
+                <legend>Altra Informació</legend>
+                    <label>Mascota:</label>
+                    <select>
+                        <option name="gat" id="1">Gat</option>
+                        <option name="gos" id="2" selected>Gos</option>
+                        <option name="canari" id="3">Canari</option>
+                        <option name="hampster" id="4">Hampster</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label>Color Favorit:</label>
+                    <input type="color" name="color" id="color">
+                    <br>
+                    <br>
+                    <label>Hora d'alsada Habitual:</label>
+                    <input type="time" name="horaAlsada" id="horaAlsada">
+            </fieldset>
+            <br>
+            <!--DOCUMENTACIÓ ESCANEJADA-->
+            <fieldset>
+                <legend>Documentació Escanejada</legend>
+                    <input type="file" name="fitxer" id="fitxer" accept=".pdf" multiple>
+                    <br>
+                    <br>
+                    <label for="observacions">Observacions</label>
+                    <br>
+                    <textarea id="observacions" name="observacions" placeholder="Observacions" rows="10" cols="50" maxlength="2048"></textarea>
+            </fieldset>
+            <br>
+            <!--CONDICIÓ PER COMPLIR AMB LA RGPD-->
+            <input type="checkbox" checked id="pPrivacitat" value="pPrivacitat" required>
+            <label for="pPrivacitat">Accepte els termes i condicions de la Política de Privacitat.</label>
+            <br>
+            <input type="checkbox" id="usDades" value="usDades" required>
+            <label for="usDades">Accepte l'arreplegament de dades amb fins comercials.</label>
+            <br>
+            <br>
+            <!--BOTONS-->
+            <button type="reset">Reiniciar Formulari</button>
+            <button type="submit">Enviar Formulari</button>
+        </fieldset>
+        </form>
+    </body>
+</html>
