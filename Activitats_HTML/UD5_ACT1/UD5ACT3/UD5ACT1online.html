@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Jordi García">
+        <script src="reprAudio.js"></script>
+        <title>Reproductor d'àudio Online</title>
+        <style>
+            #play{
+                margin-left: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Reproductor d'àudio Online</h1>
+        <div>
+            <audio id="reproductor">
+                <source src="http://apeyman.free.fr/sfx/machines/CINE.WAV" type="audio/WAV" />
+            </audio>
+            <img src="imatges/play.png" alt="play" width="50px" id="play" >
+            <img src="imatges/volume_act.png" alt="sonido" width="50px" id="volum" >
+            <input type="range" max="1" step="0.1" id="barraVol" >
+        </div>
+    </body>
+</html>
