@@ -1,0 +1,38 @@
+/*TAULA*/
+tr, th, td{
+    border: 1px solid black;
+}
+
+/*CASSELLES*/
+.casselles{
+    background-color: #fffff0;
+}
+
+/*ASSIGNATURES DE LA TAULA*/
+.valencia{
+    background-color: #7fffff;
+}
+
+.castella{
+    background-color: #96dc96;
+}
+
+.angles{
+    background-color: #80ff80;
+}
+
+.mate{
+    background-color: #b4b464;
+}
+
+.bio{
+    background-color: #f0efc8;
+}
+
+.tic{
+    background-color: #ff807f;
+}
+
+.tutoria{
+    background-color: #64b4f0;
+}
