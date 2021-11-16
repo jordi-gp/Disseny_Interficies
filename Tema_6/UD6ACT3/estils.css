@@ -7,11 +7,38 @@ table{
     height: 813px;
     width: 641px;
     border-collapse: collapse;
+    margin: auto;
 }
 
-#div{
-    border: solid 5px black;
+#imatgeLogo{
+    border: 5px solid black;
+    height: 90px;
+    width: 87px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;    
 }
+
+h2{
+    height: 25px;
+    font-size: 4;
+    text-align: center;
+}
+
+.text{
+    margin-bottom: 200x;
+    font-size: 4;
+    text-align: center;
+    font-weight: bold;
+}
+
+#A115{
+    font-style: italic;
+}
+
+/*#div{
+    border: solid 5px black;
+}*/
 
 /*CASSELLES*/
 .casselles1{
