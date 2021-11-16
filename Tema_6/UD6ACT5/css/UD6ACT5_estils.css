@@ -1,4 +1,8 @@
 @font-face {
-    font-family: 'h1';
-    src: url();
+    font-family: "Font_h1";
+    src: url(../fonts/Yuji_Mai/YujiMai-Regular.ttf) format("truetype");
+}
+
+h1 {
+    font-family: Font_h1;
 }
