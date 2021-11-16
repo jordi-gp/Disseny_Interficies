@@ -1,11 +1,33 @@
-/*TAULA*/
 tr, th, td{
     border: 1px solid black;
 }
 
+table{
+    border: 1px solid black;
+    height: 813px;
+    width: 641px;
+    border-collapse: collapse;
+}
+
+#div{
+    border: solid 5px black;
+}
+
 /*CASSELLES*/
-.casselles{
+.casselles1{
     background-color: #fffff0;
+}
+
+.casselles2{
+    background-color: #f0f0f0;
+}
+
+#professorat{
+    text-align: left;
+}
+
+.alignCenter{
+    text-align: center;
 }
 
 /*ASSIGNATURES DE LA TAULA*/
