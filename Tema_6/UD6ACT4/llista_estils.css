@@ -1,0 +1,8 @@
+ul {
+    list-style: none;
+}
+
+/*Pseudo-Elements*/
+li::before, li::after {
+    content: " # ";
+}
