@@ -1,19 +1,23 @@
+/* @font-face s'ha d'aplicar per cada una de les fonts
+*que es vajen a utilitzar descarregant-se en local */
+
+/*Font del h1*/
 @font-face {
     font-family: "Font_h1";
-    src: url(../fonts/Yuji_Mai/YujiMai-Regular.ttf);
-
-    font-family: "Font_h2";
-    src: url(../fonts/Yuji_Syuku/YujiSyuku-Regular.ttf) format("truetype");
+    src: url(../fonts/Yuji_Boku/YujiBoku-Regular.ttf);
 }
 
 h1 {
     font-family: Font_h1;
+    font-size: calc(2 * 2em)
 }
 
 h2 {
-    font-family: Font_h2;
+    font-family: Ubuntu, serif;
+    font-size: calc(1.5 * 1.5em)
 }
 
 h3 {
     font-family: "Road Rage", cursive;
+    font-size: calc(1.2 * 1.17em)
 }
