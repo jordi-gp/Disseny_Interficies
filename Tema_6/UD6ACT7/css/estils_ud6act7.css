@@ -1,0 +1,16 @@
+:root{
+    --tamany-imatge: 200px;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    width: var(--tamany-imatge);
+    height: var(--tamany-imatge);
+    
+    clip-path: circle(100px at 50% 50%);
+
+    filter: grayscale(100%);
+}
