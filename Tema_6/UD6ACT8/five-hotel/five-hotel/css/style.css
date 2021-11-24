@@ -871,10 +871,43 @@ footer form input:last-of-type {
 
 
 /** Ací posar els vostres estils */
+root{
+    --size-image: 60px;
+    --margin_image: 20px;
+}
 
+#cookies {
+    display: flex;
+    position: fixed;
 
+    bottom: 0px;
+    right: 0px;
 
+    width: 25em;
+    height: 5.5em;
 
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px black;
 
+    font-weight: bold;
+    color: white;
+    background-color: #222;
+    z-index: 20;
+}
 
+#info_cookies{
+    font-size: 17px;
+    margin-left: 1em;
+    margin-top: 10px;
+    
+}
+
+#monstre_galetes{
+    width: var(--size-image);
+    height: var(--size-image);;
+    
+    margin-top: var(--margin_image);
+    margin-left: var(--margin_image);
+}
 /** fins ací els vostes estils */
