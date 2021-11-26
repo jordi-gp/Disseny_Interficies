@@ -905,7 +905,7 @@ root{
 
 #monstre_galetes{
     width: var(--size-image);
-    height: var(--size-image);;
+    height: var(--size-image);
     
     margin-top: var(--margin_image);
     margin-left: var(--margin_image);
