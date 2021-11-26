@@ -1,5 +1,3 @@
-/* açò caldrà llevar-ho al posar els teus estils, però per a que veges
-on està en la pantalla ho he posat amb un color i li he donat un tamanys inicial*/
 /*FONS DE PANTALLA DEL NIVELL*/
 body{
   background-image: url("../fons_nivells/nivell1.jpg");
@@ -25,7 +23,7 @@ div#avio {
 }
 
 /*APARTAT PER SELECCIONAR ELS NIVELLS I LA FINESTRA D'AJUDA*/
-#menu {
+footer {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -33,6 +31,22 @@ div#avio {
   width: 100%;
   background-color: #222;
   filter: opacity(75%);
+}
+
+/*DIV DEL FOOTER*/
+#menu{
+  position: fixed;
+  display: inline-flex;
+}
+
+/*CONTINGUT DEL DIV DEL FOOTER*/
+.options{
+  margin: auto;
+  background-color: lightblue;
+  border-color: transparent;
+  color: white;
+  margin: auto;
+  border-radius: 50px;
 }
 
 /*
