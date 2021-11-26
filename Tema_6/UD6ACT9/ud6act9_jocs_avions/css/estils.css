@@ -1,15 +1,6 @@
 /* açò caldrà llevar-ho al posar els teus estils, però per a que veges
 on està en la pantalla ho he posat amb un color i li he donat un tamanys inicial*/
-/*#avio {
-  background-color: blue;
-  width: 10px;
-  height: 10px;
-}*/
-
-:root{
-  --image_size: 25%;
-}
-
+/*FONS DE PANTALLA DEL NIVELL*/
 body{
   background-image: url("../fons_nivells/nivell1.jpg");
   background-repeat: no-repeat;
@@ -18,10 +9,12 @@ body{
   height: auto;
 }
 
+/*CONTADOR DE PUNTUACIÓ DEL JUGADOR*/
 div#marcador {
 
 }
 
+/*AVIÓ DEL JUGADOR*/
 div#avio {
   background-image: url("../sprites/avion_idle.png");
   background-size: 300px;
@@ -31,8 +24,18 @@ div#avio {
   width: 300px;
 }
 
+/*APARTAT PER SELECCIONAR ELS NIVELLS I LA FINESTRA D'AJUDA*/
 #menu {
-  background-color: black;
-  display: block;
   position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 15%;
+  width: 100%;
+  background-color: #222;
+  filter: opacity(75%);
 }
+
+/*
+* TODO:
+* -MOSTRAR BOTTONS PER SELECCIONAR EL NIVELL I L'AJUDA
+*/
