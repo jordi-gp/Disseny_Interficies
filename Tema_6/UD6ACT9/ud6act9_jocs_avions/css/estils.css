@@ -23,17 +23,23 @@ body{
   
   /*POSICIONS*/
   position: absolute;
-  right: 0;
+  padding: 5px 5px;
+
   top: 0;
+  right: 0;
 
   /*MARGES*/
-  margin-right: 10px;
-  margin-top: 10px;
+  margin: 0% 0%;
 
   /*BORDES*/
   background-color: #97a5bb;
   border: 5px solid #b7c5da;
   border-radius: 10px;
+}
+
+/*TEXT DELS PUNTS*/
+.marcador::before{
+  content: "100pts";
 }
 
 /*AVIÓ DEL JUGADOR*/
