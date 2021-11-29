@@ -6,84 +6,48 @@ const pixels_a_moure = 15;
 
 function moureEsquerra() {
   let element = document.getElementById("avio");
-  //ací agafarem la posició actual on estiga l'avió amb
-  //var moviment = getAvioPos(element).left;
+  
+  var rightPos = getAvioPos(element).left;
+  var novaPos = rightPos - pixels_a_moure;
 
+  element.style.transform = "scaleX(-1)";
 
-  //i el mourem "pixels_a_moure" píxels cap a l'esquerra.
-  //Ex:
-  //   getAvioPos(element).left torna la posició de l'eix X de l'avió
-  //   getAvioPos(element).top torna la posició de l'eix Y de l'avió
-  //Per a canviar-li la posició a un element html cal
-  //posar  element.style ... (cerca per internet per veure
-  //quines propietats té style que estiguen relacionades amb posicions)
-  //************** per completar per l'alumne *******/
-  //                   todo                         */
-  //*************************************************/
-  console.log("Volem moure l'avió a l'esquerra");
+  element.style.left = novaPos+"px";
 }
 
 function moureDreta() {
   let element = document.getElementById("avio");
-  //ací agafarem la posició actual on estiga l'avió amb
-  //getAvioPos(element)
-  //i el mourem "pixels_a_moure" píxels cap a la dreta.
-  console.log(getAvioPos(element).left);
-  //Ex:
-  //   getAvioPos(element).left torna la posició de l'eix X de l'avió
-  //   getAvioPos(element).top torna la posició de l'eix Y de l'avió
-  //Per a canviar-li la posició a un element html cal
-  //posar  element.style ... (cerca per internet per veure
-  //quines propietats té style que estiguen relacionades amb posicions)
-  //************** per completar per l'alumne *******/
-  //                   todo                         */
-  //*************************************************/
-  console.log("Volem moure l'avió a la dreta");
+
+  var leftPos = getAvioPos(element).left;
+  var novaPos = leftPos + pixels_a_moure;
+
+  element.style.transform = "scaleX(1)";
+
+  element.style.left = novaPos+"px";
 }
 
 function moureAmunt() {
   let element = document.getElementById("avio");
-  //ací agafarem la posició actual on estiga l'avió amb
-  //getAvioPos(element)
-  //i el mourem "pixels_a_moure" píxels cap amunt.
-  //Ex:
-  //   getAvioPos(element).left torna la posició de l'eix X de l'avió
-  //   getAvioPos(element).top torna la posició de l'eix Y de l'avió
-  //Per a canviar-li la posició a un element html cal
-  //posar  element.style ... (cerca per internet per veure
-  //quines propietats té style que estiguen relacionades amb posicions)
-  //************** per completar per l'alumne *******/
-  //                   todo                         */
-  //*************************************************/
-  console.log("Volem moure l'avió a amunt");
+
+  var topPos = getAvioPos(element).top;
+  var novaPos = topPos - pixels_a_moure;
+
+  element.style.top = novaPos+"px";
 }
 
 function moureAvall() {
   let element = document.getElementById("avio");
-  //ací agafarem la posició actual on estiga l'avió amb
-  //getAvioPos(element);
-  //i el mourem "pixels_a_moure" píxels cap avall.
-  //Ex:
-  //   getAvioPos(element).left torna la posició de l'eix X de l'avió
-  //   getAvioPos(element).top torna la posició de l'eix Y de l'avió
-  //Per a canviar-li la posició a un element html cal
-  //posar  element.style ... (cerca per internet per veure
-  //quines propietats té style que estiguen relacionades amb posicions)
-  //************** per completar per l'alumne *******/
-  //                   todo                         */
-  //*************************************************/
-  console.log("Volem moure l'avió a la avall");
+  
+  var downPos = getAvioPos(element).top;
+  var novaPos = downPos + pixels_a_moure;
+
+  element.style.top = novaPos+"px";
 }
 
 function passarANumero(n) {
   return parseInt(n == "auto" ? 0 : n);
 }
 
-/**
- * Aquesta funció en torna una objecte amb la posició actual de l'avió a la pantalla
- * return obj.left --> posició de l'avió de l'eix X
- *        obj.top --> posició de l'avió de l'eix Y
- */
 function getAvioPos() {
   let obj = {
     left: passarANumero(getComputedStyle(avio).left),
@@ -115,6 +79,7 @@ function moureAvio(evt) {
       moureAvall();
       break;
     case 49:
+      //Hem pres el botó 1 per parar o fer que sone la música
       controlaAudio();
     break;
   }
