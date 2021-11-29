@@ -7,7 +7,9 @@ const pixels_a_moure = 15;
 function moureEsquerra() {
   let element = document.getElementById("avio");
   //ací agafarem la posició actual on estiga l'avió amb
-  //getAvioPos(element)
+  //var moviment = getAvioPos(element).left;
+
+
   //i el mourem "pixels_a_moure" píxels cap a l'esquerra.
   //Ex:
   //   getAvioPos(element).left torna la posició de l'eix X de l'avió
@@ -26,6 +28,7 @@ function moureDreta() {
   //ací agafarem la posició actual on estiga l'avió amb
   //getAvioPos(element)
   //i el mourem "pixels_a_moure" píxels cap a la dreta.
+  console.log(getAvioPos(element).left);
   //Ex:
   //   getAvioPos(element).left torna la posició de l'eix X de l'avió
   //   getAvioPos(element).top torna la posició de l'eix Y de l'avió
@@ -58,7 +61,7 @@ function moureAmunt() {
 function moureAvall() {
   let element = document.getElementById("avio");
   //ací agafarem la posició actual on estiga l'avió amb
-  getAvioPos(element);
+  //getAvioPos(element);
   //i el mourem "pixels_a_moure" píxels cap avall.
   //Ex:
   //   getAvioPos(element).left torna la posició de l'eix X de l'avió
@@ -86,7 +89,6 @@ function getAvioPos() {
     left: passarANumero(getComputedStyle(avio).left),
     top: passarANumero(getComputedStyle(avio).top),
   };
-  console.log(obj);
   return obj;
 }
 
@@ -127,7 +129,6 @@ function pararAvio() {
 function docReady() {
   window.addEventListener("keydown", moureAvio);
   window.addEventListener("keyup", pararAvio);
-  document.getElementById("help").addEventListener("click", help);
   document.getElementById("nivell1").addEventListener("click", nivell1);
   document.getElementById("nivell2").addEventListener("click", nivell2);
   document.getElementById("nivell3").addEventListener("click", nivell3);
@@ -146,10 +147,6 @@ function controlaAudio(){
 }
 
 //FUNCIONS PER CANVIAR ELS FONS DE PANTALLA
-function help(){
-  console.log("help");
-}
-
 //Nivell 1
 function nivell1(){
   document.body.style.backgroundImage = "url('fons_nivells/nivell1.jpg')";

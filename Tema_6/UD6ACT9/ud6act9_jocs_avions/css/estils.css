@@ -1,42 +1,48 @@
 /*FONS DE PANTALLA DEL NIVELL*/
 body{
-  /*IMATGE DE FONDO*/
   background-image: url("../fons_nivells/nivell1.jpg");
 
-  /*ATRIBUTS DE L'IMATGE DE FONDO*/
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-attachment: fixed;
 
-  /*ALTURA DE L'IMATGE DE FONDO*/
-  height: auto;
+  height: 100%;
+}
+
+/*AVIÓ DEL JUGADOR*/
+div#avio {
+  background-image: url("../sprites/idle_sprite.png");
+
+  background-size: 150px;
+  background-repeat: no-repeat;
+
+  height: 100px;
+  width: 150px;
+
+  border: 1px solid black;
+
+  right: 20px;
 }
 
 /*CONTADOR DE PUNTUACIÓ DEL JUGADOR*/
 .marcador {
-  /*TAMANYS*/
   width: 100px;
   height: 50px;
   
-  /*FILTRE*/
   filter: opacity(50%);
   
-  /*POSICIONS*/
   position: absolute;
   padding: 5px 5px;
 
   top: 0;
   right: 0;
 
-  /*MARGES*/
   margin: 1% 1%;
 
-  /*BORDES*/
   background-color: #97a5bb;
   border: 5px solid #b7c5da;
   border-radius: 10px;
 
-  /*SOMBREJAT DEL BLOC DE PUNTS*/
   box-shadow: 5px 5px 5px 5px #222;
 }
 
@@ -45,32 +51,15 @@ body{
   content: "100pts";
 }
 
-/*AVIÓ DEL JUGADOR*/
-div#avio {
-  /*SPRITE DE L'AVIÓ*/
-  background-image: url("../sprites/idle_sprite.png");
-
-  /*ATRIBUTS DEL SPRITE*/
-  background-size: 150px;
-  background-repeat: no-repeat;
-
-  /*TAMANY DELS ELEMENTS*/
-  height: 300px;
-  width: 300px;
-}
-
 /*APARTAT PER SELECCIONAR ELS NIVELLS I LA FINESTRA D'AJUDA*/
 footer {
-  /*POSICIONS DELS ELEMENTS*/
   position: absolute;
   left: 0;
   bottom: 0;
 
-  /*TAMANYS DELS ELEMENTS*/
   height: 15%;
   width: 100%;
 
-  /*ATRIBUTS DE L'ELEMENT*/
   background-color: #222;
   filter: opacity(75%);
 }
@@ -89,4 +78,75 @@ footer {
   color: white;
   margin-right: 50px;
   border-radius: 50px;
+}
+
+/*Finestra Modal*/
+
+#Ajuda{
+  background-color: lightblue;
+  padding: 10px;
+  color: white;
+}
+
+.modalmask {
+  position: fixed;
+  font-family: Arial, sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 99999;
+  opacity:0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+
+.modalmask:target {
+  opacity:1;
+  pointer-events: auto;
+}
+
+.modalbox{
+  width: 400px;
+  position: relative;
+  padding: 5px 20px 13px 20px;
+  background: #fff;
+  border-radius:3px;
+  -webkit-transition: all 500ms ease-in;
+  -moz-transition: all 500ms ease-in;
+  transition: all 500ms ease-in;
+   
+}
+
+.rotate {
+  margin: 10% auto;
+  -webkit-transform: scale(-5,-5);
+  transform: scale(-5,-5);
+}
+
+.modalmask:target .rotate{     
+  transform: rotate(360deg) scale(1,1);
+      -webkit-transform: rotate(360deg) scale(1,1);
+}
+
+.close {
+  background: #606061;
+  color: #FFFFFF;
+  line-height: 25px;
+  position: absolute;
+  right: 1px;
+  text-align: center;
+  top: 1px;
+  width: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius:3px;
+}
+
+.close:hover {
+  background: #FAAC58;
+  color:#222;
 }
