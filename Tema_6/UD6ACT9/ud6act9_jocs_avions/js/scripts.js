@@ -58,7 +58,7 @@ function moureAmunt() {
 function moureAvall() {
   let element = document.getElementById("avio");
   //ací agafarem la posició actual on estiga l'avió amb
-  //getAvioPos(element) 
+  getAvioPos(element);
   //i el mourem "pixels_a_moure" píxels cap avall.
   //Ex:
   //   getAvioPos(element).left torna la posició de l'eix X de l'avió
@@ -86,6 +86,7 @@ function getAvioPos() {
     left: passarANumero(getComputedStyle(avio).left),
     top: passarANumero(getComputedStyle(avio).top),
   };
+  console.log(obj);
   return obj;
 }
 
