@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Javi Signes" />
     <title>Red Plane</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/48a8c10619.js" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
     <link rel="stylesheet" href="css/estils.css" />
@@ -19,9 +22,15 @@
         <!-- avió -->
         <div id="avio"></div>
 
+    <!--música de fons del joc-->
     <!--<audio id="reproductor" autoplay loop>
         <source src="audio/musica_fons.mp3" type="audio/mpeg">
     </audio>-->
+
+    <!--audio del soroll de l'avio-->
+    <audio id="sorollAvio" loop>
+        <source src="audio/avio_es_mou.mp3" type="audio/mpeg">
+    </audio>
 
     <!--Finestra d'opcions-->
     <div id="modal2" class="modalmask">
@@ -32,6 +41,7 @@
             <p><i class="fas fa-arrow-right"></i> Dreta</p>
             <p><i class="fas fa-arrow-up"></i> Amunt</p>
             <p><i class="fas fa-arrow-down"></i> Avall</p>
+            <p><b>1:</b> Parar/Activar so</p>
 
         </div>
     </div>
@@ -41,9 +51,9 @@
     <footer>
         <div id="menu">
             <a href="#modal2">Ajuda</a>
-            <p id="nivell1">Nivell 1</p>
-            <p id="nivell2">Nivell 2</p>
-            <p id="nivell3">Nivell 3</p>
+            <button id="nivell1">Nivell 1</button>
+            <button id="nivell2">Nivell 2</button>
+            <button id="nivell3">Nivell 3</button>
         </div>
     </footer>
 </body>

@@ -1,12 +1,13 @@
-//Aquesta constant simbolitza la velocitat.
-//Realment és el número de píxels que ens movem
-//en la pantalla quan prémem una de les tecles de
-//moviment
-const pixels_a_moure = 15;
+const pixels_a_moure = 15; 
 
 function moureEsquerra() {
   let element = document.getElementById("avio");
+  let soroll = document.getElementById("sorollAvio");
+
+  soroll.play();
   
+  element.style.backgroundImage = "url('sprites/avion_movement.png')";
+
   var rightPos = getAvioPos(element).left;
   var novaPos = rightPos - pixels_a_moure;
 
@@ -17,6 +18,11 @@ function moureEsquerra() {
 
 function moureDreta() {
   let element = document.getElementById("avio");
+  let soroll = document.getElementById("sorollAvio");
+
+  soroll.play();
+
+  element.style.backgroundImage = "url('sprites/avion_movement.png')";
 
   var leftPos = getAvioPos(element).left;
   var novaPos = leftPos + pixels_a_moure;
@@ -28,6 +34,11 @@ function moureDreta() {
 
 function moureAmunt() {
   let element = document.getElementById("avio");
+  let soroll = document.getElementById("sorollAvio");
+
+  soroll.play();
+
+  element.style.backgroundImage = "url('sprites/avion_movement.png')";
 
   var topPos = getAvioPos(element).top;
   var novaPos = topPos - pixels_a_moure;
@@ -37,7 +48,12 @@ function moureAmunt() {
 
 function moureAvall() {
   let element = document.getElementById("avio");
+  let soroll = document.getElementById("sorollAvio");
+
+  soroll.play();
   
+  element.style.backgroundImage = "url('sprites/avion_movement.png')";
+
   var downPos = getAvioPos(element).top;
   var novaPos = downPos + pixels_a_moure;
 
@@ -84,11 +100,14 @@ function moureAvio(evt) {
     break;
   }
 }
+
 /**
  * Funció encarregada de fer el que calga quan es pare l'avió
  */
 function pararAvio() {
-  console.log("parem l'avió");
+  var soroll = document.getElementById("sorollAvio");
+  soroll.pause();
+  document.getElementById("avio").style.backgroundImage = "url('sprites/avion_idle.png')";
 }
 
 function docReady() {

@@ -15,16 +15,35 @@ div#avio {
 
   background-size: 150px;
   background-repeat: no-repeat;
-  position: absolute;
+  position: relative;
   height: 100px;
   width: 150px;
+
+  animation: float 3s ease-in-out infinite;
 
   left: 0;
   right: 20px;
 }
 
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+
 /*CONTADOR DE PUNTUACIÓ DEL JUGADOR*/
 .marcador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 100px;
   height: 50px;
   
@@ -47,12 +66,18 @@ div#avio {
 
 /*TEXT DELS PUNTS*/
 .marcador::before{
-  content: "100pts";
+  content: "100 pt";
+  color: red;
+  font-family: modak;
+  font-size: 25px;
 }
 
 /*APARTAT PER SELECCIONAR ELS NIVELLS I LA FINESTRA D'AJUDA*/
 footer {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   left: 0;
   bottom: 0;
 
@@ -63,28 +88,34 @@ footer {
   filter: opacity(75%);
 }
 
-#menu{
-  display: inline;
-}
+/*CONTINGUT DEL FOOTER*/
+#menu button, #menu a {
+  height: 67%;
+  width: auto;
 
-/*CONTINGUT DEL DIV DEL FOOTER*/
-#menu p{
+
   display: inline-block;
-  text-align: center;
-  background-color: lightblue;
-  border-color: transparent;
-  text-align: center;
+  border: none;
+  text-decoration: none;
+  
+  background-color: #80b2c2;
   color: white;
-  margin-right: 50px;
+
   border-radius: 50px;
+
+  padding-left: 80px;
+  padding-top: 40px;
+  
+  font-size: 16px;
+  font-family: serif;
 }
 
 /*Finestra Modal*/
-
 #Ajuda{
-  background-color: lightblue;
+  background-color: #80b2c2;
   padding: 10px;
   color: white;
+  justify-content: center;
 }
 
 .modalmask {
