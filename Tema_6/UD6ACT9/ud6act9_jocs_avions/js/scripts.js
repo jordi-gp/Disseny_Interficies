@@ -58,7 +58,7 @@ function moureAmunt() {
 function moureAvall() {
   let element = document.getElementById("avio");
   //ací agafarem la posició actual on estiga l'avió amb
-  //getAvioPos(element)
+  //getAvioPos(element) 
   //i el mourem "pixels_a_moure" píxels cap avall.
   //Ex:
   //   getAvioPos(element).left torna la posició de l'eix X de l'avió
@@ -111,12 +111,9 @@ function moureAvio(evt) {
       /** hem apretat la tecla de fletxa avall */
       moureAvall();
       break;
-    //************** per completar per l'alumne *******/
-    //                   todo                         */
-    //*************************************************/
-    //mira quina tecla és el valor 1 el teclat i fes
-    //que la música s'active o es desactive segons estava
-    //abans activada o no activada
+    case 49:
+      controlaAudio();
+    break;
   }
 }
 /**
@@ -129,4 +126,40 @@ function pararAvio() {
 function docReady() {
   window.addEventListener("keydown", moureAvio);
   window.addEventListener("keyup", pararAvio);
+  document.getElementById("help").addEventListener("click", help);
+  document.getElementById("nivell1").addEventListener("click", nivell1);
+  document.getElementById("nivell2").addEventListener("click", nivell2);
+  document.getElementById("nivell3").addEventListener("click", nivell3);
+}
+
+//Control de l'audio
+function controlaAudio(){
+  var reproductor = document.getElementById("reproductor");
+
+  if(reproductor.paused){
+    reproductor.play();
+  } else {
+    reproductor.pause();
+  }
+
+}
+
+//FUNCIONS PER CANVIAR ELS FONS DE PANTALLA
+function help(){
+  console.log("help");
+}
+
+//Nivell 1
+function nivell1(){
+  document.body.style.backgroundImage = "url('fons_nivells/nivell1.jpg')";
+}
+
+//Nivell 2
+function nivell2(){
+  document.body.style.backgroundImage = "url('fons_nivells/nivell2.jpg')";
+}
+
+//Nivell 3
+function nivell3(){
+  document.body.style.backgroundImage = "url('fons_nivells/nivell3.jpg')";
 }

@@ -29,12 +29,15 @@ body{
   right: 0;
 
   /*MARGES*/
-  margin: 0% 0%;
+  margin: 1% 1%;
 
   /*BORDES*/
   background-color: #97a5bb;
   border: 5px solid #b7c5da;
   border-radius: 10px;
+
+  /*SOMBREJAT DEL BLOC DE PUNTS*/
+  box-shadow: 5px 5px 5px 5px #222;
 }
 
 /*TEXT DELS PUNTS*/
@@ -48,7 +51,7 @@ div#avio {
   background-image: url("../sprites/idle_sprite.png");
 
   /*ATRIBUTS DEL SPRITE*/
-  background-size: 200px;
+  background-size: 150px;
   background-repeat: no-repeat;
 
   /*TAMANY DELS ELEMENTS*/
@@ -72,21 +75,18 @@ footer {
   filter: opacity(75%);
 }
 
-/*DIV DEL FOOTER*/
 #menu{
-  position: fixed;
-  display: inline-flex;
+  display: inline;
 }
 
 /*CONTINGUT DEL DIV DEL FOOTER*/
-.options{
+#menu p{
+  display: inline-block;
+  text-align: center;
   background-color: lightblue;
   border-color: transparent;
+  text-align: center;
   color: white;
+  margin-right: 50px;
   border-radius: 50px;
 }
-
-/*
-* TODO:
-* -MOSTRAR BOTTONS PER SELECCIONAR EL NIVELL I L'AJUDA
-*/
