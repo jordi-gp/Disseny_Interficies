@@ -20,15 +20,13 @@ function moureEsquerra() {
 }
 
 function moureDreta() {
-    let element = document.getElementById("avio");
+  let element = document.getElementById("avio");
+  //if(getAvioPos(element).left < window.innerHeight){
     let soroll = document.getElementById("sorollAvio");
 
     soroll.play();
 
     element.style.backgroundImage = "url('sprites/avion_movement.png')";
-    element.style.backgroundSize = "150px";
-    element.style.height = "100px";
-    element.style.width = "150px";
 
     var leftPos = getAvioPos(element).left;
     var novaPos = leftPos + pixels_a_moure;
@@ -36,6 +34,7 @@ function moureDreta() {
     element.style.transform = "scaleX(1)";
 
     element.style.left = novaPos+"px";
+  //}
 }
 
 function moureAmunt() {

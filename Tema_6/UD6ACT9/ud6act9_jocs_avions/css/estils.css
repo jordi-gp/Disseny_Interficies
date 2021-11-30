@@ -60,10 +60,13 @@ div#avio {
   margin: 1% 1%;
 
   background-color: #97a5bb;
-  border: 5px solid #b7c5da;
-  border-radius: 10px;
+  
+  border: 5px solid white;
 
+  border-radius: 10px;
   box-shadow: 5px 5px 5px 5px #222;
+
+  z-index: 20;
 }
 
 /*TEXT DELS PUNTS*/
@@ -92,21 +95,18 @@ footer {
 
 /*CONTINGUT DEL FOOTER*/
 #menu button, #menu a {
-  height: 67%;
-  width: auto;
-
-
-  display: inline-block;
+  /*display: inline-block;*/
   border: none;
   text-decoration: none;
   
   background-color: #80b2c2;
   color: white;
 
-  border-radius: 50px;
+  text-align: center;
 
-  padding-left: 80px;
-  padding-top: 40px;
+  border-radius: 40px;
+
+  padding: 25px 30px 25px 30px;
   
   font-size: 16px;
   font-family: serif;
