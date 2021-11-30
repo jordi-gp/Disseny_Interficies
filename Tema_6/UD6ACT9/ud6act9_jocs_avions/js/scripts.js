@@ -2,48 +2,56 @@ const pixels_a_moure = 15;
 
 function moureEsquerra() {
   let element = document.getElementById("avio");
-  let soroll = document.getElementById("sorollAvio");
+  if(getAvioPos(element).left > -5){
+    let soroll = document.getElementById("sorollAvio");
 
-  soroll.play();
+    soroll.play();
   
-  element.style.backgroundImage = "url('sprites/avion_movement.png')";
+    element.style.backgroundImage = "url('sprites/avion_movement.png')";
 
-  var rightPos = getAvioPos(element).left;
-  var novaPos = rightPos - pixels_a_moure;
+    var rightPos = getAvioPos(element).left;
+    var novaPos = rightPos - pixels_a_moure;
 
-  element.style.transform = "scaleX(-1)";
+    element.style.transform = "scaleX(-1)";
 
-  element.style.left = novaPos+"px";
+    element.style.left = novaPos+"px";
+  }
+  
 }
 
 function moureDreta() {
-  let element = document.getElementById("avio");
-  let soroll = document.getElementById("sorollAvio");
+    let element = document.getElementById("avio");
+    let soroll = document.getElementById("sorollAvio");
 
-  soroll.play();
+    soroll.play();
 
-  element.style.backgroundImage = "url('sprites/avion_movement.png')";
+    element.style.backgroundImage = "url('sprites/avion_movement.png')";
+    element.style.backgroundSize = "150px";
+    element.style.height = "100px";
+    element.style.width = "150px";
 
-  var leftPos = getAvioPos(element).left;
-  var novaPos = leftPos + pixels_a_moure;
+    var leftPos = getAvioPos(element).left;
+    var novaPos = leftPos + pixels_a_moure;
 
-  element.style.transform = "scaleX(1)";
+    element.style.transform = "scaleX(1)";
 
-  element.style.left = novaPos+"px";
+    element.style.left = novaPos+"px";
 }
 
 function moureAmunt() {
   let element = document.getElementById("avio");
-  let soroll = document.getElementById("sorollAvio");
+  if(getAvioPos(element).top > 0){
+    let soroll = document.getElementById("sorollAvio");
 
-  soroll.play();
+    soroll.play();
 
-  element.style.backgroundImage = "url('sprites/avion_movement.png')";
+    element.style.backgroundImage = "url('sprites/avion_movement.png')";
 
-  var topPos = getAvioPos(element).top;
-  var novaPos = topPos - pixels_a_moure;
+    var topPos = getAvioPos(element).top;
+    var novaPos = topPos - pixels_a_moure;
 
-  element.style.top = novaPos+"px";
+    element.style.top = novaPos+"px";
+  }
 }
 
 function moureAvall() {
@@ -106,8 +114,10 @@ function moureAvio(evt) {
  */
 function pararAvio() {
   var soroll = document.getElementById("sorollAvio");
+  var element = document.getElementById("avio");
   soroll.pause();
-  document.getElementById("avio").style.backgroundImage = "url('sprites/avion_idle.png')";
+  element.style.backgroundImage = "url('sprites/avion_idle.png')";
+  //element.style.animation = "float 3s ease-in-out infinite";
 }
 
 function docReady() {

@@ -19,13 +19,15 @@ div#avio {
   height: 100px;
   width: 150px;
 
-  animation: float 3s ease-in-out infinite;
+  /*animation: float 3s ease-in-out infinite;*/
 
   left: 0;
   right: 20px;
 }
 
-@keyframes float {
+/*L'animació de flotar quan està quet no funciona*/
+
+/*@keyframes float {
 	0% {
 		transform: translatey(0px);
 	}
@@ -35,7 +37,7 @@ div#avio {
 	100% {
 		transform: translatey(0px);
 	}
-}
+}*/
 
 
 /*CONTADOR DE PUNTUACIÓ DEL JUGADOR*/
