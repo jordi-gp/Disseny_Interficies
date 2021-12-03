@@ -95,7 +95,14 @@ footer {
 
 /*CONTINGUT DEL FOOTER*/
 #menu button, #menu a {
+<<<<<<< HEAD
+  height: 67%;
+  width: auto;
+
+  display: inline-block;
+=======
   /*display: inline-block;*/
+>>>>>>> 01010fa7cd52dcac513695913124163d616e6718
   border: none;
   text-decoration: none;
   
