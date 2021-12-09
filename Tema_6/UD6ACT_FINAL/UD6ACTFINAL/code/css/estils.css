@@ -111,34 +111,42 @@
 }
 
 /*Codi utilitzat per realitzar l'activitat*/
-* {
-    margin: 0;
-    box-sizing: border-box;
+/*Header de la pàgina*/
+.header_main{
+    display: flex;
+    background-color: black;
+}
+
+.enlace{
     text-decoration: none;
-}
-
-header{
-    padding: 0.5em;
-    background-color: lightgrey;
-}
-
-div.header_main{
-    background-color: red;
-    margin-right: 10em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
-
-.text{
-    text-align: center;
-    color: blue;
-}
-
-.links_menu{
-    justify-content: right;
-    text-align: right;
+    color: white;
+    margin: 20px;
 }
 
 #logo{
-    height: 2em;
+    width: 50px;
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+#titol{
+    margin-top: 0.5em;
+    margin-left: 1em;
+}
+
+#options_menu{
+    display: flex;
+    margin-left: 77em;
+    margin-top: 2em;
+}
+
+/*Cos de la Pàgina*/
+#main_content{
+    margin-top: 0em;
+    background-color: lightblue;
+    height: 20em;
+}
+
+h1{
+    border: 1px solid black;
 }
