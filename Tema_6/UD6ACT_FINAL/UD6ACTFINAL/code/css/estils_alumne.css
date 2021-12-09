@@ -1,0 +1,94 @@
+/*Codi creat desde cero per realitzar l'activitat*/
+/*Definició dels estils a per defecte*/
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*Definició de variables utilitzades al llarg de l'activitat*/
+:root {
+    /*Color dels enllaços*/
+    --color_enlace: #fa7015;
+    --color_text_general: white;
+    --tam_border: 5px;
+}
+
+header .col-6 {
+    display: flex;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    background-color: black;
+    z-index: 20;
+}
+
+/*PART ESQUERRE*/
+.logo img{
+    float: left;
+    width: 2.2em;
+}
+
+.logo p{
+    font-size: 17px;
+    margin-top: 0.5em;
+    margin-left: 0.7em;
+    color: var(--color_text_general);
+}
+
+/*PART DRETA*/
+.menu {
+    justify-content: space-around;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--color_text_general);
+    padding-top: 0.5em;
+    padding-left: 1px;
+}
+
+/*CONTINGUT DE LA PÀGINA*/
+/*Bloc general*/
+.bloc_1 {
+    height: 50em;
+
+    color: var(--color_text_general);
+
+    background-repeat: no-repeat;
+    background-image: url('../../img/confeti.svg'), radial-gradient( 80vw circle at 50% 10%, #3a2099 17%, #480c59 100% );
+}
+
+/*Text General de la plana*/
+.content {
+    border: 1px solid greenyellow;
+}
+
+.content h1{
+    border: 1px solid blue;
+    text-align: center;
+    margin: 5px 25% 67px 25%;
+}
+
+.content p{
+    border: 1px solid blue;
+    margin-right: 25%;
+    margin-left: 25%;
+    text-align: center;
+}
+
+/*bloc de color taronja*/
+.targetes {
+    display: flex;
+}
+
+.tarjeta_1 {
+    background-color:orange;
+    border-radius: var(--tam_border);
+    height: 10em;
+}
+
+.tarjeta_2 {
+    background-color: purple;
+    border-radius: var(--tam_border);
+    height: 10em;
+}
