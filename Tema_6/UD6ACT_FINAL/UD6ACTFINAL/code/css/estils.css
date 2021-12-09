@@ -113,8 +113,9 @@
 /*Codi utilitzat per realitzar l'activitat*/
 /*Header de la pàgina*/
 .header_main{
-    display: flex;
+    display: inline-flex;   
     background-color: black;
+    border: 1px solid greenyellow;
 }
 
 .enlace{
@@ -136,15 +137,14 @@
 
 #options_menu{
     display: flex;
-    margin-left: 77em;
+    margin-left: 40%;
     margin-top: 2em;
 }
 
 /*Cos de la Pàgina*/
 #main_content{
-    margin-top: 0em;
+    margin: 0;
     background-color: lightblue;
-    height: 20em;
 }
 
 h1{
