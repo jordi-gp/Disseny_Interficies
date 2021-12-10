@@ -1,6 +1,6 @@
 /*Codi creat desde cero per realitzar l'activitat*/
 /*Definició dels estils a per defecte*/
-*{
+* {
     margin: 0;
     box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
