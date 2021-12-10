@@ -14,11 +14,15 @@
     --tam_border: 5px;
 }
 
+.header_main {
+    background-color: black;
+    padding: 2px;
+}
+
 header .col-6 {
     display: flex;
     padding-top: 0.5%;
     padding-bottom: 0.5%;
-    background-color: black;
     z-index: 20;
 }
 
@@ -47,6 +51,10 @@ header .col-6 {
     padding-left: 1px;
 }
 
+.menu a:hover{
+    color: orange;
+}
+
 /*CONTINGUT DE LA PÀGINA*/
 /*Bloc general*/
 .bloc_1 {
@@ -60,7 +68,7 @@ header .col-6 {
 
 /*Text General de la plana*/
 .content {
-    border: 1px solid greenyellow;
+    /*border: 1px solid greenyellow;*/
 }
 
 .content h1{
@@ -79,6 +87,18 @@ header .col-6 {
 /*bloc de color taronja*/
 .targetes {
     display: flex;
+}
+
+.img_targ {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid greenyellow;
+}
+
+.targ_info {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid greenyellow;
 }
 
 .tarjeta_1 {
