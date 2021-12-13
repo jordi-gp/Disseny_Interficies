@@ -109,43 +109,5 @@
         width: 1170px;
     }
 }
-/*Codi utilitzat per realitzar l'activitat*/
-/*Header de la pàgina*/
-.header_main{
-    display: inline-flex;   
-    background-color: black;
-    border: 1px solid greenyellow;
-}
 
-.enlace{
-    text-decoration: none;
-    color: white;
-    margin: 20px;
-}
 
-#logo{
-    width: 50px;
-    margin-top: 1em;
-    margin-left: 1em;
-}
-
-#titol{
-    margin-top: 0.5em;
-    margin-left: 1em;
-}
-
-#options_menu{
-    display: flex;
-    margin-left: 40%;
-    margin-top: 2em;
-}
-
-/*Cos de la Pàgina*/
-#main_content{
-    margin: 0;
-    background-color: lightblue;
-}
-
-h1{
-    border: 1px solid black;
-}

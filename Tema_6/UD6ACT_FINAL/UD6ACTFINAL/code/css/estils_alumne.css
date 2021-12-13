@@ -6,24 +6,48 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+@font-face {
+    font-family: "Source_Code_Pro";
+    src: url(../../fonts/static/SourceCodePro-Regular.ttf);
+}
+
 /*Definició de variables utilitzades al llarg de l'activitat*/
 :root {
     /*Color dels enllaços*/
     --color_enlace: #fa7015;
     --color_text_general: white;
-    --tam_border: 5px;
+    --tam_border: 10px;
+
+    /*Variables del bloc número 3*/
+    --font_size_bloc3: 2.5em;
+    --leter_spacing_bloc3: 1px;
+    --marge_costats_bloc3: 25%;
 }
 
+/*Imatges reescalades per ajustar-se al resultat*/
+.imatge_reescalada {
+    width: 48px;
+    height: 48px;
+}
+
+.enlace {
+    text-decoration: none;
+    color: var(--color_enlace);
+}
+
+/*---------------------------------------------------*/
+/*PRIMER BLOC*/
 .header_main {
     background-color: black;
+    display: inline-flex;
     padding: 2px;
+    z-index: 20;
 }
 
 header .col-6 {
     display: flex;
     padding-top: 0.5%;
     padding-bottom: 0.5%;
-    z-index: 20;
 }
 
 /*PART ESQUERRE*/
@@ -58,7 +82,7 @@ header .col-6 {
 /*CONTINGUT DE LA PÀGINA*/
 /*Bloc general*/
 .bloc_1 {
-    height: 50em;
+    height: 61.3em;
 
     color: var(--color_text_general);
 
@@ -66,15 +90,12 @@ header .col-6 {
     background-image: url('../../img/confeti.svg'), radial-gradient( 80vw circle at 50% 10%, #3a2099 17%, #480c59 100% );
 }
 
-/*Text General de la plana*/
-.content {
-    /*border: 1px solid greenyellow;*/
-}
-
 .content h1{
+    font-weight: normal;
+    font-size: 4em;
     border: 1px solid blue;
     text-align: center;
-    margin: 5px 25% 67px 25%;
+    margin: 5px 20% 67px 20%;
 }
 
 .content p{
@@ -84,31 +105,285 @@ header .col-6 {
     text-align: center;
 }
 
+.info_extra {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: -8em;
+}
+
+.info_extra div img {
+    margin-bottom: 1.1em;
+}
+
+.flecha_blanca_1 {
+    margin-left: 60%;
+    margin-top: -15%;
+}
+
+.flecha_blanca_2 {
+    margin-left: 20%;
+    margin-top: -10%;
+}
+
+.info_extra div h2{
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.info_extra div p {
+    line-height: 1.5em;
+}
+
 /*bloc de color taronja*/
 .targetes {
     display: flex;
+    margin-top: 10.2em;
+}
+
+.imatge_targeta {
+    margin-top: 2em;
+    width: 48px;
+    height: 48px;
 }
 
 .img_targ {
     display: flex;
     flex-direction: column;
-    border: 1px solid greenyellow;
+}
+
+.img_targ h1 {
+    font-weight: normal;
+    margin-left: 2em;
+    margin-top: -1.5em;
+}
+
+.img_targ p {
+    font-weight: normal;
+    margin-left: 2em;
+    margin-top: -1.5em;
 }
 
 .targ_info {
     display: flex;
     flex-direction: column;
-    border: 1px solid greenyellow;
+}
+
+.targ_info p {
+    margin-left: 4em;
+    line-height: 1.5em;
 }
 
 .tarjeta_1 {
-    background-color:orange;
+    background-image: linear-gradient( 153deg, #e64c4c 0%, #fb8332 95%);
     border-radius: var(--tam_border);
-    height: 10em;
+
+    padding-bottom: 3em;
+    margin-left: 3em;
+
+    margin-bottom: 8em;
 }
 
 .tarjeta_2 {
-    background-color: purple;
+    background-image: linear-gradient(153deg, #da6bf8 0%, #815eff 95%);
     border-radius: var(--tam_border);
-    height: 10em;
+
+    margin-right: 5em;
+    margin-left: 5em;
+    margin-bottom: 8em;
+}
+/*---------------------------------------------------*/
+/*SEGON BLOC*/
+.subrayat {
+    background-color: #b2b2b2;
+    font-family: "Source_Code_Pro";
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 2px 5px 2px 5px;
+}
+
+.contingut_2 {
+    margin-top: 5em;
+    margin-right: 10em;
+    margin-left: 10em;
+}
+
+.contingut_2 h2, h3  {
+    font-weight: normal;
+}
+
+.contingut_2 h2 {
+    text-align: center;
+    margin-top: -0.1em;
+    font-size: 2.7em;
+}
+
+.contingut_2 h3 {
+    margin-left: 11em;
+    font-size: 1.6em;
+    word-spacing: 2px;
+    margin-top: 1.6em;
+    margin-left: 1.6em;
+}
+
+.contingut_2 p {
+    margin-top: 1.2em;
+    margin-left: 2.6em;
+    line-height: 1.7em;
+}
+
+.contingut_2 li {
+    margin-left: 2.7em;
+    margin-top: 0.4em;
+}
+
+.contingut_2 ol img {
+    margin-top: 1.3em;
+    margin-left: 2.6em;
+}
+
+#hola_mon {
+    font-style: italic;
+}
+
+#codi_exemple {
+    border: 1px solid #ebecec;
+    border-radius: 5px;
+    margin-top: 2em;
+    margin-left: 2.6em;
+    margin-right: 2.5em;
+    margin-bottom: 4em;
+    background-color: #f6f7f8;
+}
+
+#codi_exemple p{
+    font-family: "Source_Code_Pro";
+    font-size: 16px;
+    line-height: 1em;
+}
+
+.tabulacion_1 {
+    padding-left: 2em;
+    margin-right: 10em;
+}
+
+.tabulacion_2 {
+    padding-left: 4em;
+}
+
+#aporta_solucio {
+    margin-top: 1em;
+    border: 1px solid lightgrey;
+    font-size: 12px;
+}
+
+/*---------------------------------------------------*/
+/*TERCER BLOC*/
+.info_bloc2 {
+    background-color: white;
+    height: 77.3em;
+}
+
+.etiqueta {
+    color: #d0a73b;
+}
+
+.cont_etiqueta {
+    color: red;
+}
+
+/*---------------------------------------------------*/
+/*CUART BLOC*/
+.info_bloc3 {
+    background-color: #151617;
+    height: 24.7em;
+}
+
+.info_bloc3 {
+    letter-spacing: 0.1px;
+}
+
+.titol_bloc_1 {
+    text-align: center;
+    color: var(--color_text_general);
+    
+    margin-right: var(--marge_costats_bloc3);
+    margin-left: var(--marge_costats_bloc3);
+    margin-top: 2.5%;
+
+    font-size: var(--font_size_bloc3);
+    letter-spacing: var(--leter_spacing_bloc3);
+}
+
+.titol_bloc_2 {
+    text-align: center;
+
+    color: var(--color_text_general);
+    margin-right: var(--marge_costats_bloc3);
+    margin-left: var(--marge_costats_bloc3);
+    margin-top: -7px;
+
+    font-size: var(--font_size_bloc3);
+    letter-spacing: var(--leter_spacing_bloc3);
+}
+
+.content_bloc_1 {
+    text-align: center;
+    color: var(--color_text_general);
+    margin-top: 1.2em;
+    margin-right: 16%;
+    margin-left: 16%;
+    font-size: 1.7em;
+}
+
+.content_bloc_2 {
+    color: var(--color_text_general);
+    text-align: center;
+    margin-top: 0.2em;
+    margin-right: 15%;
+    margin-left: 15%;
+    font-size: 1.7em;
+}
+
+/*Informació continguda en el bloc 4*/
+#titol_bloc {
+    font-weight: normal;
+    text-align: center;
+    border: 1px solid green;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 3em;
+}
+
+.info_bloc4 {
+    display: inline-flex;
+    border: 1px solid red;
+    height: 25em;
+    padding-top: 0.1em;
+}
+
+.contingut_4 {
+    display: flex;
+    justify-content: center;
+    margin-top: 7em;
+    border: 1px solid blue;
+}
+
+/*Footer de la pàgina*/
+.copyright {
+    font-size: 12px;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu_footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer a:hover {
+    color: #fa7015;
 }
